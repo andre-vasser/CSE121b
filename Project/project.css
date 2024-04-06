@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #photo-container {
+    margin-right: 20px;
+  }
+  
+  #photo-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  #info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
