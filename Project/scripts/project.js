@@ -34,4 +34,19 @@
         ]
       }
     ]
+    // Fetch data from an API
+fetch('https://wallpaperaccess.com/one-punch-man-saitama')
+.then(response => response.json())
+.then(data => {
+  // Manipulate the DOM or apply styles based on the fetched data
+  const dataContainer = document.getElementById('data-container');
+  dataContainer.innerHTML = '';
+
+  data.forEach(item => {
+    const div = document.createElement('div');
+    div.textContent = item.title;
+    dataContainer.appendChild(div);
+  });
+})
+.catch(error => console.error('Error fetching data:', error));
   }
