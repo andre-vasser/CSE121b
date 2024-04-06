@@ -13,14 +13,33 @@ myProfile.name = "Andre Vasser";
 myProfile.photo = "../images/Andre.png";
 
 /* Favorite Foods List*/
-myProfile.favoriteFoods = ["Favorite Food 1", "Favorite Food 2", "Favorite Food 3"];
+myProfile.favoriteFoods = ["Potato", "Chocolate", "Salad"];
 
 /* Hobbies List */
-myProfile.hobbies = ["Hobby 1", "Hobby 2", "Hobby 3"];
+myProfile.hobbies = ["Soccer", "Swim", "Bicycle"];
 
 /* Places Lived DataList */
 
-myProfile.placesLived.push({ place: "Place Name 1", length: "Length of Time 1" });
-myProfile.placesLived.push({ place: "Place Name 2", length: "Length of Time 2" });
-myProfile.placesLived.push({ place: "Place Name 3", length: "Length of Time 3" });
+myProfile.placesLived.push({ place: "Brazil", length: "30Years " });
+myProfile.placesLived.push({ place: "Bolivia", length: "6 Months" });
+myProfile.placesLived.push({ place: "USA", length: "5 Years" });
 
+document.querySelector('#name').textContent = myProfile.name;
+myProfile.favoriteFoods.forEach(food => {
+    let li = document.createElement('li');
+    li.textContent = food;
+    document.querySelector('#favorite-foods').appendChild(li);
+});
+myProfile.hobbies.forEach(hobby => {
+    let li = document.createElement('li');
+    li.textContent = hobby;
+    document.querySelector('#hobbies').appendChild(li);
+});
+myProfile.placesLived.forEach(home => {
+    let dt = document.createElement('dt');
+    dt.textContent = home.place;
+    document.querySelector('#places-lived').appendChild(dt);
+    let dd = document.createElement('dd');
+    dd.textContent = home.length;
+    document.querySelector('#places-lived').appendChild(dd);
+})
