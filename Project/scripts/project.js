@@ -4,7 +4,7 @@
     "formed": 2016,
     "secretBase": "Super tower",
     "active": true,
-    "Heroes": [
+    "members": [
       {
         "name": "Thor",
         "age": 1,500,
