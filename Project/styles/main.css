@@ -1,0 +1,42 @@
+.Heroes {
+    text-align: center;
+  }
+  
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .member {
+    max-width: 300px;
+    background-color: #10101100;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .member-details {
+    padding: 20px;
+  }
+  
+  .member-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .member-age,
+  .member-secret-identity,
+  .member-powers {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  
