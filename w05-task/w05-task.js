@@ -57,7 +57,27 @@ const filterTemples = (temples) => {
     }
 }
 
+
+
+const sortTemples = (temples) => {
+    reset();
+
+    const sorted = document.getElementById('sorted').value;
+
+    switch (sorted) {
+        
+        case "ascending":
+            displayTemples(temples.sort());
+            break;
+        case "descending":
+            displayTemples(temples.reverse());
+            break;
+        default:
+            displayTemples(temples);
+    }
+}
 getTemples();
 
 /* Event Listener */
 document.querySelector("#filtered").addEventListener("change", () => { filterTemples(templeList) });
+document.getElementById("sorted").addEventListener("change", () => { sortTemples(templeList)});
