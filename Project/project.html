@@ -9,38 +9,15 @@
 <body>
   
     <div class="Heroes">
-      <h1 class="Heroes">Super Heroes</h1>
+      <h1 class="Heroes">Pokemon</h1>
       <div class="members">
-        <!-- Thor -->
-        <div class="member">
-          <img src="../images/Thor2.jpg" alt="Thor">
-          <h2 class="member-name">Thor</h2>
-          <p class="member-age">Age: 1,500</p>
-          <p class="member-secret-identity">Secret Identity: Donald Blake</p>
-          <p class="member-powers">Powers:Lightning, thunder, storms, sacred groves and trees, strength,
-               hallowing, and fertility1. Superhuman strength, speed, agility, durability, 
-              and immunity to most diseases2. He can summon the forces of lightning and thunder with his trusty hammer, 
-              Mjolnir, which has power over storms and can generate energy blasts known as anti-force34. 
-              Thor is also incredibly physically strong and enduring3</p>
-        </div>
-        <!-- Superman -->
-        <div class="Heroes">
-          <img src="../images/Superman2.jpg" alt="Superman">
-          <h2 class="member-name">Superman</h2>
-          <p class="member-age">Age: 39</p>
-          <p class="member-secret-identity">Secret Identity: Clark Kent</p>
-          <p class="member-powers">Powers: Million ton punch, Damage resistance, Superhuman reflexes</p>
-        </div>
-        <!-- Saitama -->
-        <div class="Heroes">
-          <img src="../images/Saitama2.jpg" alt="OnePunchMan">
-          <h2 class="member-name">Saitama</h2>
-          <p class="member-age">Age: 25</p>
-          <p class="member-secret-identity">Secret Identity: Unknown</p>
-          <p class="member-powers">Powers: Strenght, Speed, Stamina, Durability</p>
+        
+        <div> 
+          <input type="text" id="search"/> 
+          <button id="search-button"onClick = "searchPokemon()">search</button> 
         </div>
         <div id="data-container">
-            <!-- Fetched data will be displayed here -->
+            
           </div>
       </div>
     </div>
@@ -51,6 +28,6 @@
       <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
       </script>
-      <script src="w05-task.js" type="text/javascript"></script>
+      <script src="scripts/project.js" type="text/javascript"></script>
   </body>
 </html>
